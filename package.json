@@ -13,7 +13,7 @@
     "lint": "eslint",
     "heroku-prebuild": "NODE_ENV=development npm ci",
     "heroku-postbuild": "npm run build && NODE_ENV=production npm ci",
-    "heroku-cleanup": "find . -depth -maxdepth 1 -not -name '.' -not -name '*.d.ts' -not -name '.next' -not -name 'public' -not -name 'node_modules' -print | xargs rm -rv"
+    "heroku-cleanup": "find . -depth -maxdepth 1 -not -name '.' -not -name '.heroku' -not -name '*.d.ts' -not -name '.next' -not -name 'public' -not -name 'node_modules' -print | xargs rm -rv"
   },
   "dependencies": {
     "@openai/chatkit-react": ">=1.1.1 <2.0.0",
